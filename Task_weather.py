@@ -30,6 +30,6 @@ for weather_day in weather_daily:
 
 max_pressure = max(all_pressure)
 print(f'Максимальное давление за предстоящие 5 дней (включая текущий): {max_pressure} мм.рт.ст.')
-day_max_diff = min(date_and_temp_diff.keys(), key=lambda x: date_and_temp_diff[x])
-print(f'День с минимальной разницей между ночной и утренней температурой: {day_max_diff}')
+day_min_diff = min(date_and_temp_diff.keys(), key=lambda x: date_and_temp_diff[x])
+print(f'День с минимальной разницей между ночной и утренней температурой: {day_min_diff}')
 
